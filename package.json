@@ -14,6 +14,7 @@
     "dev": "nodemon listen.js",
     "dev-create-database": "psql -f ./database/create-database.sql",
     "dev-drop-database": "psql -f ./database/drop-database.sql",
+    "dev-drop-and-create-all-tables": "node ./database/drop-and-create-all-tables.js",
     "dev-drop-create-and-seed-all-tables": "node ./database/drop-create-and-seed-all-tables.js",
     "dev-check-all-tables": "psql -f ./database/check-all-tables.sql > ./database/all-tables.txt"
   }
