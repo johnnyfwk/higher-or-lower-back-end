@@ -4,7 +4,8 @@ function getAllOriginalScores() {
     const queryString = `
         SELECT *
         FROM original
-        ORDER BY score DESC;
+        ORDER BY score DESC
+        LIMIT 100;
     `
     return database
         .query(queryString)
