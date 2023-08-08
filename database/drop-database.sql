@@ -1,0 +1,1 @@
+DROP DATABASE IF EXISTS help_me_choose_one;
