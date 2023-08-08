@@ -20,11 +20,11 @@ app.use(cors());
 
 app.use(express.json());
 
-app.get("/api/original/scores", getOriginalScores);
-app.get("/api/original/scores/:original_id", getOriginalScoreById);
-app.post("/api/original/scores", addOriginalScore);
-app.patch("/api/original/scores/:original_id", updateOriginalScoreById);
-app.delete("/api/original/scores/:original_id", deleteOriginalScoreById);
+app.get("/api/original", getOriginalScores);
+app.get("/api/original/:original_id", getOriginalScoreById);
+app.post("/api/original", addOriginalScore);
+app.patch("/api/original/:original_id", updateOriginalScoreById);
+app.delete("/api/original/:original_id", deleteOriginalScoreById);
 
 app.all("*", handle404Errors);
 
