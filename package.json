@@ -19,6 +19,8 @@
     "dev-drop-and-create-all-tables": "node ./database/drop-and-create-all-tables.js",
     "dev-drop-create-and-seed-all-tables": "node ./database/drop-create-and-seed-all-tables.js",
     "dev-check-all-tables": "psql -f ./database/check-all-tables.sql > ./database/all-tables.txt",
-    "prod-drop-and-create-all-tables": "NODE_ENV=production npm run dev-drop-and-create-all-tables"
+    "prod-drop-and-create-all-tables": "NODE_ENV=production npm run dev-drop-and-create-all-tables",
+    "prod-drop-create-and-seed-all-tables": "NODE_ENV=production npm run dev-drop-create-and-seed-all-tables",
+    "prod-check-all-tables": "NODE_ENV=production npm run dev-check-all-tables"
   }
 }
