@@ -1,1 +1,1 @@
-DROP DATABASE IF EXISTS help_me_choose_one;
+DROP DATABASE IF EXISTS higher_or_lower;
